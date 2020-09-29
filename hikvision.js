@@ -55,6 +55,8 @@ hikvision.prototype.connect = function(options) {
 	client.on('error', function(err) {
 		handleError(self, err)
 	});
+	
+	return client
 }
 
 // Raw PTZ Command - command/arg1/arg2/arg3/arg4
